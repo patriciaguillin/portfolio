@@ -9,35 +9,6 @@ body {
     width: 1280px;
 }
 
-.controls {
-    display: center;
-    text-align: center;
-    vertical-align: middle;
-    padding: 2%;
-    color: #eee;
-}
-
-.controls a {
-    display: inline-block;
-    padding: .3em .7em;
-    background-color: #fff;
-    border: 0px solid #ddd;
-    color: gray;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 300;
-    cursor: pointer;
-}
-
-.controls a.active {
-    color: dimgray;
-    font-size: 20px;
-}
-
-.controls a:focus {
-    outline: 0 none;
-}
-
 .container {
     text-align: left;
     font-size: 0.1px;
@@ -51,7 +22,6 @@ body {
 }
 
 .container .mix {
-
     display: none;
 }
 
@@ -63,53 +33,12 @@ body {
     background-color: aquamarine;
 }
 
-
-/*
-nav{
-    overflow:hidden;
-    padding:10px;
-    
-}
-nav ul{
-    list-style:none;
-    margin:0 10px 0 10px;
-    padding:0;
-    float: right;
-}
-
-nav ul li{
-    float:left;
-    font-size:16px;
-    font-weight:bold;
-    margin-right:10px;
-    text-align:right;
-}
-
-
-nav ul li a{
-    color:#999;
-    display:block;
-    padding:10px;
-    text-decoration:none;
-    Transiciones
-    -webkit-transition: 0.4s linear all;
-    -moz-transition: 0.4s linear all;
-    -o-transition: 0.4s linear all;
-    transition: 0.4s linear all;
-}
-
-nav ul li a:hover {
-    color:#000;
-}*/
-
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, .3);
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #fff;
     overflow: hidden;
-    padding: 10px;
 }
 
 .navbar-custom ul {
@@ -177,26 +106,6 @@ nav ul li a:hover {
     color: #000;
 }
 
-@media(min-width:768px) {
-    .navbar-custom {
-        padding: 20px 0;
-        border-bottom: 0;
-        letter-spacing: 1px;
-        background: 0 0;
-        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
-        transition: background .5s ease-in-out, padding .5s ease-in-out;
-    }
-    .navbar-custom.top-nav-collapse {
-        padding: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, .3);
-        background: #fff;
-    }
-    .navbar-custom.top-nav-collpase a {
-        color: #000;
-    }
-}
-
 .intro {
     display: table;
     width: 100%;
@@ -212,6 +121,10 @@ nav ul li a:hover {
     -o-background-size: cover;
 }
 
+.controls {
+    display: none;
+}
+
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
@@ -223,19 +136,6 @@ nav ul li a:hover {
 
 .intro .intro-body .intro-text {
     font-size: 18px;
-}
-
-@media(min-width:768px) {
-    .intro {
-        height: 100vh;
-        padding: 0;
-    }
-    .intro .intro-body .brand-heading {
-        font-size: 100px;
-    }
-    .intro .intro-body .intro-text {
-        font-size: 26px;
-    }
 }
 
 .top-nav-collapse {
@@ -250,7 +150,7 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #fff;    
+    background-color: #fff;
     padding: 20px 0;
 }
 
@@ -265,17 +165,72 @@ footer p {
     margin-top: 100px;
 }
 
-@media(min-width:767px) {
+
+
+@media(min-width:768px) {
+    .controls {
+        display: in;
+    }
+    .controls {
+        display: inherit;
+        text-align: center;
+        vertical-align: middle;
+        padding: 2%;
+    }
+    .controls a {
+        display: inline-block;
+        padding: .3em .7em;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 300;
+        color: #aaaaaa;
+        cursor: pointer;
+    }
+    .controls a.active {
+        color: #362744;
+    }
+    .controls a:hover {
+        color: #362744;
+        text-decoration: none;
+        -webkit-transition: color .3s ease-in-out;
+        -moz-transition: color .3s ease-in-out;
+        transition: color .3s ease-in-out;
+    }
+    .navbar-custom {
+        padding: 20px 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+        background: #fff;
+    }
+    .navbar-custom.top-nav-collpase a {
+        color: #000;
+    }
+    .intro {
+        height: 100vh;
+        padding: 0;
+    }
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+    .intro .intro-body .intro-text {
+        font-size: 26px;
+    }
     .content-section {
         padding-top: 250px;
     }
-
     .download-section {
         padding: 100px 0;
     }
-
     #map {
         height: 400px;
         margin-top: 250px;
     }
 }
+
