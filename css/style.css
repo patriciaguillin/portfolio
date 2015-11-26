@@ -1,5 +1,20 @@
+@font-face {
+   font-family: "MontserratLight";
+   src: url("fonts/Montserrat-Light.otf") format("opentype");
+}
+
+@font-face {
+   font-family: "MontserratHairline";
+   src: url("fonts/Montserrat-Hairline.otf") format("opentype");
+}
+
+@font-face {
+   font-family: "MontserratUltraLight";
+   src: url("fonts/Montserrat-UltraLight.otf") format("opentype");
+}
+
 body {
-    font-family: Arial;
+    font-family:  MontserratUltraLight, Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -29,15 +44,10 @@ body {
     width: 100%;
 }
 
-.main-menu {
-    background-color: aquamarine;
-}
-
 .navbar-custom {
     margin-bottom: 0;
     text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #fff;
+    font-family: MontserratHairline, Arial, Helvetica, sans-serif;
     overflow: hidden;
 }
 
@@ -48,10 +58,14 @@ body {
 }
 
 .navbar-custom ul li {
+    
     font-size: 12px;
     font-weight: bold;
     margin-right: 10px;
     text-align: center;
+}
+.navbar-custom a{
+        color: #fff;
 }
 
 .navbar-custom .navbar-brand {
@@ -72,9 +86,7 @@ body {
     outline: 0;
 }
 
-.navbar-custom a {
-    color: #362744;
-}
+
 
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
@@ -82,14 +94,14 @@ body {
     transition: background .3s ease-in-out;
 }
 
-.navbar-custom .nav li a:hover {
+.navbar-custom a:hover {
     outline: 0;
     color: #ed1654;
-    background-color: transparent;
 }
 
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
+    color: color: #ed1654;
     outline: 0;
     background-color: transparent;
 }
@@ -99,7 +111,6 @@ body {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(255, 255, 255, .3);
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -138,9 +149,13 @@ body {
     font-size: 18px;
 }
 
+.top-nav-collapse a{
+     color: #362744;
+}
 .top-nav-collapse {
     padding: 0;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
+   
     background: #fff;
     -webkit-transition: background-color 300ms linear, color 1s linear;
     -moz-transition: background-color 300ms linear, color 1s linear;
@@ -166,6 +181,38 @@ footer p {
 }
 
 
+#contacto {
+    margin:20px 0;
+}
+
+.contact-section {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact-section h3 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    color: #333;
+}
+
+.contact-section h3 span.subtitle {
+        display: block;
+    margin-top: 5px;
+    color: #444;
+    font-weight: 300;
+    text-transform: none;
+}
+
+.fbox-icon {
+}
+
+
+
+
 
 @media(min-width:768px) {
     .controls {
@@ -180,7 +227,6 @@ footer p {
     .controls a {
         display: inline-block;
         padding: .3em .7em;
-        font-family: inherit;
         font-size: 16px;
         font-weight: 300;
         color: #aaaaaa;
