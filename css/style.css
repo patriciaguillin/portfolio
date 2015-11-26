@@ -166,6 +166,38 @@ footer p {
 }
 
 
+#contacto {
+    margin:20px 0;
+}
+
+.contact-section {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact-section h3 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    color: #333;
+}
+
+.contact-section h3 span.subtitle {
+        display: block;
+    margin-top: 5px;
+    color: #444;
+    font-weight: 300;
+    text-transform: none;
+}
+
+.fbox-icon {
+}
+
+
+
+
 
 @media(min-width:768px) {
     .controls {
