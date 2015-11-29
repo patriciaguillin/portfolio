@@ -1,16 +1,16 @@
 @font-face {
    font-family: "MontserratLight";
-   src: url("fonts/Montserrat-Light.otf") format("opentype");
+   src: url("../fonts/Montserrat-Light.otf") format("opentype");
 }
 
 @font-face {
    font-family: "MontserratHairline";
-   src: url("fonts/Montserrat-Hairline.otf") format("opentype");
+   src: url("../fonts/Montserrat-Hairline.otf") format("opentype");
 }
 
 @font-face {
    font-family: "MontserratUltraLight";
-   src: url("fonts/Montserrat-UltraLight.otf") format("opentype");
+   src: url("../fonts/Montserrat-UltraLight.otf") format("opentype");
 }
 
 body {
@@ -118,14 +118,14 @@ body {
 }
 
 .intro {
+    height: 100vh;
+    padding: 0;
     display: table;
     width: 100%;
-    height: auto;
-    padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: #000;
+    /*background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;*/
+    background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -258,10 +258,7 @@ footer p {
     .navbar-custom.top-nav-collpase a {
         color: #000;
     }
-    .intro {
-        height: 100vh;
-        padding: 0;
-    }
+   
     .intro .intro-body .brand-heading {
         font-size: 100px;
     }
