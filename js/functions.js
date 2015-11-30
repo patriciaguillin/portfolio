@@ -7,69 +7,20 @@ $(window).scroll(function () {
     }
 });
 
-//Scrollorama and TweenMax appear disappear elements
+//Wow apper disappear elements
+$(function () {
+    wow = new WOW({
+        animateClass: 'animated',
+        offset: 100,
+        callback: function (box) {
+            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+    });
+    wow.init();
+});
+//Mixitup
 $(function () {
     $('#Container').mixItUp();
-});
-$(document).ready(function () {
-    var controller = $.superscrollorama();
-    // individual element tween examples
-    controller.addTween('#scale-it', TweenMax.fromTo($('#scale-it'), .1, {
-        css: {
-            opacity: 0,
-            scale: 0
-        },
-        immediateRender: true,
-        ease: Quad.easeInOut
-    }, {
-        css: {
-            opacity: 1,
-            scale: 1
-        },
-        ease: Quad.easeInOut
-    }));
-    controller.addTween('#scale-it2', TweenMax.fromTo($('#scale-it2'), .2, {
-        css: {
-            opacity: 0,
-            scale: 0
-        },
-        immediateRender: true,
-        ease: Quad.easeInOut
-    }, {
-        css: {
-            opacity: 1,
-            scale: 1
-        },
-        ease: Quad.easeInOut
-    }));
-    controller.addTween('#scale-it3', TweenMax.fromTo($('#scale-it3'), .3, {
-        css: {
-            opacity: 0,
-            scale: 0
-        },
-        immediateRender: true,
-        ease: Quad.easeInOut
-    }, {
-        css: {
-            opacity: 1,
-            scale: 1
-        },
-        ease: Quad.easeInOut
-    }));
-    controller.addTween('#scale-it4', TweenMax.fromTo($('#scale-it4'), .4, {
-        css: {
-            opacity: 0,
-            scale: 0
-        },
-        immediateRender: true,
-        ease: Quad.easeInOut
-    }, {
-        css: {
-            opacity: 1,
-            scale: 1
-        },
-        ease: Quad.easeInOut
-    }));
 });
 
 // For Demo purposes only (show hover effect on mobile devices)

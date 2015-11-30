@@ -1,20 +1,20 @@
 @font-face {
-   font-family: "MontserratLight";
-   src: url("../fonts/Montserrat-Light.otf") format("opentype");
+    font-family: "MontserratLight";
+    src: url("../fonts/Montserrat-Light.otf") format("opentype");
 }
 
 @font-face {
-   font-family: "MontserratHairline";
-   src: url("../fonts/Montserrat-Hairline.otf") format("opentype");
+    font-family: "MontserratHairline";
+    src: url("../fonts/Montserrat-Hairline.otf") format("opentype");
 }
 
 @font-face {
-   font-family: "MontserratUltraLight";
-   src: url("../fonts/Montserrat-UltraLight.otf") format("opentype");
+    font-family: "MontserratUltraLight";
+    src: url("../fonts/Montserrat-UltraLight.otf") format("opentype");
 }
 
 body {
-    font-family:  MontserratUltraLight, Arial, Helvetica, sans-serif;
+    font-family: MontserratUltraLight, Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -58,14 +58,14 @@ body {
 }
 
 .navbar-custom ul li {
-    
     font-size: 12px;
     font-weight: bold;
     margin-right: 10px;
     text-align: center;
 }
-.navbar-custom a{
-        color: #fff;
+
+.navbar-custom a {
+    color: #fff;
 }
 
 .navbar-custom .navbar-brand {
@@ -85,8 +85,6 @@ body {
 .navbar-custom .navbar-brand .navbar-toggle:active {
     outline: 0;
 }
-
-
 
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
@@ -110,8 +108,7 @@ body {
     outline: 0;
 }
 
-.navbar-custom .nav li.active a {
-}
+.navbar-custom .nav li.active a {}
 
 .navbar-custom .nav li.active a:hover {
     color: #000;
@@ -149,13 +146,13 @@ body {
     font-size: 18px;
 }
 
-.top-nav-collapse a{
-     color: #362744;
+.top-nav-collapse a {
+    color: #362744;
 }
+
 .top-nav-collapse {
     padding: 0;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
-   
     background: #fff;
     -webkit-transition: background-color 300ms linear, color 1s linear;
     -moz-transition: background-color 300ms linear, color 1s linear;
@@ -180,9 +177,8 @@ footer p {
     margin-top: 100px;
 }
 
-
 #contacto {
-    margin:20px 0;
+    margin: 20px 0;
 }
 
 .contact-section {
@@ -200,19 +196,36 @@ footer p {
 }
 
 .contact-section h3 span.subtitle {
-        display: block;
+    display: block;
     margin-top: 5px;
     color: #444;
     font-weight: 300;
     text-transform: none;
 }
-
-.fbox-icon {
+footer {
+    
+    background-image: url("../img/25.jpg");
+    vertical-align: middle;
 }
 
 
+footer .copy p{
+    color: #fff;
+}
 
+#social-footer ul {
+    text-align: center;
+}
 
+#social-footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#social-footer ul li img {
+    width: 40px;
+}
 
 @media(min-width:768px) {
     .controls {
@@ -258,7 +271,6 @@ footer p {
     .navbar-custom.top-nav-collpase a {
         color: #000;
     }
-   
     .intro .intro-body .brand-heading {
         font-size: 100px;
     }
@@ -271,9 +283,7 @@ footer p {
     .download-section {
         padding: 100px 0;
     }
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
+    #social-footer ul {
+    text-align: right;
 }
-
+}
