@@ -1,3 +1,11 @@
+#porfolio {
+    min-height: 600px;
+}
+
+#porfolio:hover {
+}
+
+
 .view-sixth img {
     -webkit-transition: all 0.4s ease-in-out 0.5s;
     -moz-transition: all 0.4s ease-in-out 0.5s;

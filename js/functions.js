@@ -7,6 +7,16 @@ $(window).scroll(function () {
     }
 });
 
+$(window).scroll(function () {
+   if ($(".navbar").offset().top > 50) {
+        $(".btn-subir").addClass("prueba");
+    } else {
+        $(".btn-subir").removeClass("prueba");
+    }
+});
+
+
+
 //Wow apper disappear elements
 $(function () {
     wow = new WOW({
