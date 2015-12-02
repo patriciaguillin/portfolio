@@ -2000,7 +2000,7 @@ pre code {
 
 @media (min-width: 768px) {
     #porfolio {
-        min-height: 600px;
+        min-height: 500px;
     }
     .container2 {
         width: 750px;
@@ -2024,18 +2024,11 @@ pre code {
         width: 1580px;
     }
     #porfolio {
-        min-height: 800px;
+        min-height: 800px !important;
     }
 }
 
-@media (min-width: 1920px) {
-    #porfolio {
-        min-height: 1200px;
-    }
-    .container2 {
-        width: 1900px;
-    }
-}
+
 
 .container2-fluid {
     margin-right: auto;

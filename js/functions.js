@@ -5,6 +5,13 @@ $(window).scroll(function () {
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
+});// jQuery to collapse the navbar on scroll
+$(window).scroll(function () {
+    if ($(".navbar").offset().top > 50) {
+        $(".hs-caption").addClass("hs-caption2");
+    } else {
+        $(".hs-caption").removeClass("hs-caption2");
+    }
 });
 
 $(window).scroll(function () {

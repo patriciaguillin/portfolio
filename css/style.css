@@ -362,30 +362,30 @@
     }
     /*POSIBILIDAD, SI NO EDITAR FOTOS*/
     
-    .bg-dark-50:before {
-        position: absolute;
-        background: rgba(0, 0, 0, .5);
-        content: " ";
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
-    }
+
+.bg-dark-50:before {
+    position: absolute;
+    
+    content: " ";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
     
     .module-hero {
         top: 0px;
         opacity: 1;
-        height: 623.05px;
+        height: 260px;
         position: relative;
         background-color: #fff;
-        background-repeat: no-repeat;
         background-position: center center;
         width: 100%;
         z-index: 0;
-        background-position: 50% 50%;
+        background-position:center top;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: cover;
+    background-size: 100% auto;
     }
     
     .hs-caption {
@@ -394,7 +394,23 @@
         position: relative;
         display: table;
         height: 100%;
+         position: absolute;
+    
+    content: " ";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(54, 39, 68, .5);
+            -webkit-transition: background .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out;
+        transition: background .5s ease-in-out;
     }
+
+.hs-caption2 {
+     
+    background: rgba(255, 255, 255, .5);
+}
     
     .caption-content {
         display: table-cell;
@@ -403,13 +419,16 @@
     }
     
     .hs-title-size-3 {
+        font-family: MontserratLight,Arial, sans-serif;
         letter-spacing: 0.1em;
-        font-size: 28px;
+        font-size: 20px;
+        margin-bottom: 15px;
     }
     
     .hs-title-size-2 {
-        letter-spacing: 0.2em;
-        font-size: 18px;
+        font-family: MontserratHairLine,Arial, sans-serif;
+        letter-spacing: 0.1em;
+        font-size: 14px;
     }
     
     .padding-description {
@@ -441,40 +460,30 @@
     .prueba {
         opacity: 1.0;
     }
-.images-project {
+    
+    .images-project {}
+    
+    .images-project img {
+        margin: 10px;
+        width: 100%;
+    }
+
+.description-one {
+    text-align: center;
+    font-family: MontserratHairLine,Arial, sans-serif;
+    
 }
-.images-project img {
-    margin: 10px;
-    width: 100%;
+.description-one h2 {
+    display: ubk
 }
+
+.description-two {
+    margin-top: 20px;
+    font-family: MontserratHairLine,Arial, sans-serif;
+}
+
+
     @media(min-width:768px) {
-        .controls {
-            display: inherit;
-        }
-        .controls {
-            display: inherit;
-            text-align: center;
-            vertical-align: middle;
-            padding: 2%;
-        }
-        .controls a {
-            display: inline-block;
-            padding: .3em .7em;
-            font-size: 16px;
-            font-weight: 300;
-            color: #aaaaaa;
-            cursor: pointer;
-        }
-        .controls a.active {
-            color: #362744;
-        }
-        .controls a:hover {
-            color: #362744;
-            text-decoration: none;
-            -webkit-transition: color .3s ease-in-out;
-            -moz-transition: color .3s ease-in-out;
-            transition: color .3s ease-in-out;
-        }
         .navbar-custom {
             padding: 20px 0;
             letter-spacing: 1px;
@@ -519,5 +528,60 @@
         }
         .padding-description {
             padding: 20px;
+        }
+          .hs-title-size-3 {
+        letter-spacing: 0.1em;
+        font-size: 25px;
+    }
+    
+    .hs-title-size-2 {
+        letter-spacing: 0.2em;
+        font-size: 16px;
+    }
+        
+        .module-hero {
+            height: 500px;
+        }
+    }
+    
+    @media(min-width:1024px) {
+        .controls {
+            display: inherit;
+        }
+        .controls {
+            display: inherit;
+            text-align: center;
+            vertical-align: middle;
+            padding: 2%;
+        }
+        .controls a {
+            display: inline-block;
+            padding: .3em .7em;
+            font-size: 16px;
+            font-weight: 300;
+            color: #aaaaaa;
+            cursor: pointer;
+        }
+        .controls a.active {
+            color: #362744;
+        }
+        .controls a:hover {
+            color: #362744;
+            text-decoration: none;
+            -webkit-transition: color .3s ease-in-out;
+            -moz-transition: color .3s ease-in-out;
+            transition: color .3s ease-in-out;
+        }
+          .hs-title-size-3 {
+        letter-spacing: 0.1em;
+        font-size: 28px;
+    }
+    
+    .hs-title-size-2 {
+        letter-spacing: 0.2em;
+        font-size: 18px;
+    }
+          .module-hero {
+            height: 700px;
         }
     }
