@@ -441,7 +441,12 @@
     .prueba {
         opacity: 1.0;
     }
-    
+.images-project {
+}
+.images-project img {
+    margin: 10px;
+    width: 100%;
+}
     @media(min-width:768px) {
         .controls {
             display: inherit;
