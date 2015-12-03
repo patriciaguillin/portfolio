@@ -117,7 +117,8 @@
     section,
     main {
         display: block;
-    }
+        font-family: MontserratUltraLight, Arial, Helvetica, sans-serif;    
+}
     
     ol,
     ul {
@@ -167,6 +168,10 @@
         width: 100%;
     }
     
+    .navbar {
+        background: #fff;
+    }
+    
     .navbar-header {
         height: 70px;
     }
@@ -192,7 +197,7 @@
     }
     
     .navbar-custom a {
-        color: #fff;
+        color: #362744;
     }
     
     .navbar-custom .navbar-brand {
@@ -232,7 +237,6 @@
     .navbar-custom .nav li a:active {
         color: color: #ed1654;
         outline: 0;
-        background-color: transparent;
     }
     
     .navbar-custom .nav li.active {
@@ -274,20 +278,6 @@
     
     .intro .intro-body .intro-text {
         font-size: 18px;
-    }
-    
-    .top-nav-collapse a {
-        color: #362744;
-    }
-    
-    .top-nav-collapse {
-        padding: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, .3);
-        -webkit-transition: background-color 300ms linear, color 1s linear;
-        -moz-transition: background-color 300ms linear, color 1s linear;
-        -o-transition: background-color 300ms linear, color 1s linear;
-        -ms-transition: background-color 300ms linear, color 1s linear;
-        transition: background-color 300ms linear, color 1s linear;
     }
     
     #contacto {
@@ -362,16 +352,18 @@
     }
     /*POSIBILIDAD, SI NO EDITAR FOTOS*/
     
-
-.bg-dark-50:before {
-    position: absolute;
+    .bg-dark-50:before {
+        position: absolute;
+        content: " ";
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
     
-    content: " ";
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-}
+    .navbar-brand img {
+        content: url("../img/logo.png");
+    }
     
     .module-hero {
         top: 0px;
@@ -382,10 +374,10 @@
         background-position: center center;
         width: 100%;
         z-index: 0;
-        background-position:center top;
+        background-position: center top;
         background-repeat: no-repeat;
         background-attachment: fixed;
-    background-size: 100% auto;
+        background-size: 100% auto;
     }
     
     .hs-caption {
@@ -394,23 +386,21 @@
         position: relative;
         display: table;
         height: 100%;
-         position: absolute;
-    
-    content: " ";
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(54, 39, 68, .5);
-            -webkit-transition: background .5s ease-in-out;
+        position: absolute;
+        content: " ";
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(54, 39, 68, .5);
+        -webkit-transition: background .5s ease-in-out;
         -moz-transition: background .5s ease-in-out;
         transition: background .5s ease-in-out;
     }
-
-.hs-caption2 {
-     
-    background: rgba(255, 255, 255, .5);
-}
+    
+    .hs-caption2 {
+        background: rgba(255, 255, 255, .5);
+    }
     
     .caption-content {
         display: table-cell;
@@ -419,14 +409,14 @@
     }
     
     .hs-title-size-3 {
-        font-family: MontserratLight,Arial, sans-serif;
+        font-family: MontserratLight, Arial, sans-serif;
         letter-spacing: 0.1em;
         font-size: 20px;
         margin-bottom: 15px;
     }
     
     .hs-title-size-2 {
-        font-family: MontserratHairLine,Arial, sans-serif;
+        font-family: MontserratHairLine, Arial, sans-serif;
         letter-spacing: 0.1em;
         font-size: 14px;
     }
@@ -467,23 +457,44 @@
         margin: 10px;
         width: 100%;
     }
-
-.description-one {
-    text-align: center;
-    font-family: MontserratHairLine,Arial, sans-serif;
     
-}
-.description-one h2 {
-    display: ubk
-}
-
-.description-two {
-    margin-top: 20px;
-    font-family: MontserratHairLine,Arial, sans-serif;
-}
-
-
+    .description-one {
+        text-align: center;
+        font-family: MontserratHairLine, Arial, sans-serif;
+    }
+    
+    .description-one h2 {
+        display: ubk
+    }
+    
+    .description-two {
+        margin-top: 20px;
+        font-family: MontserratHairLine, Arial, sans-serif;
+    }
+    
+    .wow:first-child {
+        visibility: hidden;
+    }
+    
     @media(min-width:768px) {
+        .navbar-custom a {
+            color: #fff;
+        }
+        .navbar-brand img {
+            content: url("../img/logo2.png");
+        }
+        .top-nav-collapse a {
+            color: #362744 !important;
+        }
+        .top-nav-collapse {
+            padding: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, .3);
+            -webkit-transition: background-color 300ms linear, color 1s linear;
+            -moz-transition: background-color 300ms linear, color 1s linear;
+            -o-transition: background-color 300ms linear, color 1s linear;
+            -ms-transition: background-color 300ms linear, color 1s linear;
+            transition: background-color 300ms linear, color 1s linear;
+        }
         .navbar-custom {
             padding: 20px 0;
             letter-spacing: 1px;
@@ -529,16 +540,14 @@
         .padding-description {
             padding: 20px;
         }
-          .hs-title-size-3 {
-        letter-spacing: 0.1em;
-        font-size: 25px;
-    }
-    
-    .hs-title-size-2 {
-        letter-spacing: 0.2em;
-        font-size: 16px;
-    }
-        
+        .hs-title-size-3 {
+            letter-spacing: 0.1em;
+            font-size: 25px;
+        }
+        .hs-title-size-2 {
+            letter-spacing: 0.2em;
+            font-size: 16px;
+        }
         .module-hero {
             height: 500px;
         }
@@ -572,16 +581,15 @@
             -moz-transition: color .3s ease-in-out;
             transition: color .3s ease-in-out;
         }
-          .hs-title-size-3 {
-        letter-spacing: 0.1em;
-        font-size: 28px;
-    }
-    
-    .hs-title-size-2 {
-        letter-spacing: 0.2em;
-        font-size: 18px;
-    }
-          .module-hero {
+        .hs-title-size-3 {
+            letter-spacing: 0.1em;
+            font-size: 28px;
+        }
+        .hs-title-size-2 {
+            letter-spacing: 0.2em;
+            font-size: 18px;
+        }
+        .module-hero {
             height: 700px;
         }
     }
