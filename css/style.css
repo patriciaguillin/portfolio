@@ -117,8 +117,8 @@
     section,
     main {
         display: block;
-        font-family: MontserratUltraLight, Arial, Helvetica, sans-serif;    
-}
+        font-family: MontserratUltraLight, Arial, Helvetica, sans-serif;
+    }
     
     ol,
     ul {
@@ -138,14 +138,14 @@
         content: none;
     }
     
+    .strong {
+        font-family: MontserratLight, Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+    
     table {
         border-collapse: collapse;
         border-spacing: 0;
-    }
-    
-    .wrapper {
-        margin: 0 auto;
-        width: 1280px;
     }
     
     .container {
@@ -298,6 +298,11 @@
         color: #333;
     }
     
+    .contact-section a img {
+        width: 70px;
+        margin: 30px 0;
+    }
+    
     .contact-section h3 span.subtitle {
         display: block;
         margin-top: 5px;
@@ -350,7 +355,12 @@
         text-align: center;
         margin-top: 90px;
     }
-    /*POSIBILIDAD, SI NO EDITAR FOTOS*/
+    
+    #phrase .cover-phrase p {
+        font-size: 1.2em;
+        color: #fff;
+        text-align: center;
+    }
     
     .bg-dark-50:before {
         position: absolute;
@@ -362,7 +372,7 @@
     }
     
     .navbar-brand img {
-        content: url("../img/logo.png");
+        content: url("../img/logo.svg");
     }
     
     .module-hero {
@@ -476,12 +486,76 @@
         visibility: hidden;
     }
     
+    br {
+        line-height: 2em;
+    }
+    
+    .sobreMi-two {
+        padding: 30px 20px;
+        text-align: justify;
+    }
+    
+    .sobreMi-cv {
+        text-align: center;
+    }
+    
+    .sobreMi-cv .cd-btn {
+        display: inline-block;
+        padding: 1.2em 1.4em;
+        margin-top: .8em;
+        background-color: rgba(229, 0, 81, 0.9);
+        font-size: 1.3rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #ffffff;
+        text-transform: uppercase;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        -webkit-transition: background-color 0.2s;
+        -moz-transition: background-color 0.2s;
+        transition: background-color 0.2s;
+        margin-bottom: 20px;
+        text-decoration: none;
+    }
+
+.sobreMi-cv .cd-btn:hover {
+  background-color: #362744;
+}
+    
+    .sobreMi-cv a img {
+        width: 70px;
+    }
+
+#share {
+    padding: 20px;
+    vertical-align: middle;
+}
+#share img{
+    width: 40px;
+}
+
+.resaltado {
+    font-weight: 800;
+    color: #362744;
+    font-size: 1.5em;
+}
+#scrollbar {
+    margin-top: 20px;
+    background-color: #362744;
+    padding: 20px;
+}
+
+#scrollbar img{
+    width: 60px;
+}
+
+
+    
     @media(min-width:768px) {
         .navbar-custom a {
             color: #fff;
         }
         .navbar-brand img {
-            content: url("../img/logo2.png");
+            content: url("../img/logo2.svg");
         }
         .top-nav-collapse a {
             color: #362744 !important;
@@ -509,7 +583,7 @@
             background: #fff;
         }
         .navbar-custom.top-nav-collapse img {
-            content: url("../img/logo.png");
+            content: url("../img/logo.svg");
         }
         .navbar-custom.top-nav-collpase a {
             color: #000;
@@ -536,6 +610,9 @@
         #phrase h2 {
             font-size: 2.4em;
             margin-top: 140px;
+        }
+        #phrase .cover-phrase p {
+            font-size: 1.5em;
         }
         .padding-description {
             padding: 20px;

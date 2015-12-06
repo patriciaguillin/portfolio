@@ -34,7 +34,6 @@
     filter: alpha(opacity=0);
     opacity: 0;
     background: transparent;
-    margin: 20px 40px 0px 40px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s ;
     -o-transition: all 0.3s ;
@@ -158,6 +157,7 @@
     -moz-box-shadow: 1px 1px 2px #e6e6e6;
     box-shadow: 1px 1px 2px #e6e6e6;
     cursor: default;
+    cursor: pointer;
 }
 
 .view .mask,
@@ -183,25 +183,22 @@
 
 .view h2 {
     text-transform: uppercase;
-    width: 100%;
-    color: #fff;
+    color: #362744;
     text-align: center;
     font-size: 17px;
-    padding: 10px;
-    margin: 20px 0 0 0;
 }
 
-
+.view a {
+    text-decoration: none;
+}
 
 
 .view a.info {
     width: 100%;
     height: 50px;
     display: inline-block;
-    background: #ffffff;
-    margin-top: 100px;
-    color: black;
-    text-align: left;
+    background: #fff;
+    text-align: center;
 }
 
 .view a.info img{
@@ -326,7 +323,7 @@ Single slide style
 }
 .cd-hero-slider li:nth-of-type(2) {
   background-color: #3d4952;
-  background-image: url("../img/intro2.jpg");
+  background-image: url("../img/intro3.jpg");
 }
 .cd-hero-slider li:nth-of-type(3) {
   background-color: #586775;
@@ -334,11 +331,11 @@ Single slide style
 }
 .cd-hero-slider li:nth-of-type(4) {
   background-color: #2c343b;
-  background-image: url("../assets/video-replace-mobile.jpg");
+  background-image: url("../img/video-replace-mobile.jpg");
 }
 .cd-hero-slider li:nth-of-type(5) {
   background-color: #2c343b;
-  background-image: url("../img/intro2.jpg");
+  background-image: url("../img/intro5.jpg");
 }
 .cd-hero-slider .cd-full-width,
 .cd-hero-slider .cd-half-width {
@@ -442,7 +439,7 @@ Single slide style
   margin-left: 1em;
 }
 .no-touch .cd-hero-slider .cd-btn:hover {
-  background-color: #d44457;
+  background-color: #362744;
 }
 .no-touch .cd-hero-slider .cd-btn.secondary:hover {
   background-color: #161a1e;
@@ -478,6 +475,7 @@ Single slide style
   }
   .cd-hero-slider .cd-btn {
     font-size: 1.4rem;
+      text-decoration: none;
   }
 }
 @media only screen and (min-width: 1170px) {
