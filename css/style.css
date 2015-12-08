@@ -628,6 +628,18 @@
         .module-hero {
             height: 500px;
         }
+        .guit {
+            cursor: pointer;
+        }
+        .guit img:hover {
+            content: url("../img/Proyecto6/img2-dos.jpg");
+        }
+        .guit2 {
+            cursor: pointer;
+        }
+        .guit2 img:hover {
+            content: url("../img/Proyecto8/img2-dos.jpg");
+        }
     }
     
     @media(min-width:1024px) {
