@@ -281,7 +281,7 @@
     }
     
     #contacto {
-        margin: 20px 0;
+        margin: 0 0 35px 0;
     }
     
     .contact-section {
@@ -312,11 +312,14 @@
     }
     
     footer {
-        height: 130px;
+        height: 160px;
         padding: 30px;
-        background-image: url("../img/back_footer.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
+
+    margin-top: 20px;
+    background-color: #362744;
+    padding: 20px;
+
+
     }
     
     footer .copy p {
@@ -340,7 +343,7 @@
     }
     
     #phrase {
-        height: 200px;
+        height: 150px;
         background-image: url(../img/back_footer.jpg);
         background-position: 50% 50%;
         background-repeat: no-repeat;
@@ -353,7 +356,7 @@
         color: #fff;
         font-size: 1.5em;
         text-align: center;
-        margin-top: 90px;
+        margin-top: 40px;
     }
     
     #phrase .cover-phrase p {
@@ -374,6 +377,10 @@
     .navbar-brand img {
         content: url("../img/logo.svg");
     }
+
+.navbar-nav li a {
+    font-family: MontserratLight, sans-serif;
+}
     
     .module-hero {
         top: 0px;
@@ -491,7 +498,7 @@
     }
     
     .sobreMi-two {
-        padding: 30px 20px;
+        padding: 80px 20px 30px 20px;
         text-align: justify;
     }
     
@@ -548,6 +555,12 @@
     width: 60px;
 }
 
+#porfolio {
+    min-height: 600px;
+    margin-bottom: 20px;
+}
+
+
 
     
     @media(min-width:768px) {
@@ -601,15 +614,13 @@
             padding: 100px 0;
         }
         footer {
-            height: 160px;
-            padding: 40px;
+            height: 120px;
+            padding: 20px;
         }
         #phrase {
-            height: 300px;
         }
         #phrase h2 {
             font-size: 2.4em;
-            margin-top: 140px;
         }
         #phrase .cover-phrase p {
             font-size: 1.5em;
@@ -630,6 +641,7 @@
         }
         .guit {
             cursor: pointer;
+            
         }
         .guit img:hover {
             content: url("../img/Proyecto6/img2-dos.jpg");
@@ -639,6 +651,15 @@
         }
         .guit2 img:hover {
             content: url("../img/Proyecto8/img2-dos.jpg");
+        }
+        .guit3 {
+            cursor: pointer;
+        }
+        .guit3 img:hover {
+            content: url("../img/Proyecto14/img2-dos.jpg");
+        }
+        #porfolio {
+            margin-bottom: 60px;
         }
     }
     
@@ -650,7 +671,7 @@
             display: inherit;
             text-align: center;
             vertical-align: middle;
-            padding: 2%;
+            padding: 80px 0 2% 0;
         }
         .controls a {
             display: inline-block;
@@ -661,6 +682,7 @@
             cursor: pointer;
         }
         .controls a.active {
+            font-family: MontserratLight;
             color: #362744;
         }
         .controls a:hover {
@@ -680,5 +702,8 @@
         }
         .module-hero {
             height: 700px;
+        }
+          #porfolio {
+            margin-bottom: 100px;
         }
     }
